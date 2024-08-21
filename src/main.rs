@@ -139,8 +139,8 @@ fn save_memory(file_location: &str) {
         writeln!(md_file, "# Your 🤖 Giru File").expect("Failed to write to file, please try again");
     }
 
-    writeln!(md_file, "## {}", why_store_this_thing).expect("Failed to write to file, please try again");
-    writeln!(md_file, "```\n{}```\n", thing_to_remember).expect("Failed to write to file, please try again");
+    writeln!(md_file, "## {}\n", why_store_this_thing).expect("Failed to write to file, please try again");
+    writeln!(md_file, "`{}`\n", thing_to_remember).expect("Failed to write to file, please try again");
 
     let hint = if rand::thread_rng().gen_range(1..=2) == 1 {
         "list"
