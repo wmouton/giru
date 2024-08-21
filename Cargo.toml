@@ -1,0 +1,19 @@
+[package]
+name = "giru"
+version = "0.1.0"
+edition = "2021"
+authors = ["WMouton"]
+description = "A note taking application for the terminal"
+documentation = "https://github.com/wmouton/giru"
+readme = "README.md"
+repository = "https://github.com/wmouton/giru"
+license = "GPL-3.0"
+keywords = ["rust", "tool", "terminal", "cli", "notes"]
+categories = ["command-line-utilities"]
+homepage = "https://github.com/wmouton/giru"
+
+[dependencies]
+termimad = "0.5"
+rand = "0.8.5"
+clap = { version = "3.0", features = ["derive"] }
+
